@@ -29,7 +29,7 @@ banner() {
     if ! [ -x "$(command -v figlet)" ]; then
         echo 'Introducing Mansmash Made by Mahfuz'
     else
-        figlet TBomb
+        figlet Mansmash
     fi
     if ! [ -x "$(command -v toilet)" ]; then
         echo -e "\e[4;34m This Bomber Was Created By \e[1;32Founder of Dark-Evil MR. Mahfuz Rahman \e[0m"
