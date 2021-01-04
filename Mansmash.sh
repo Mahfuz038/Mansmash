@@ -35,7 +35,7 @@ banner() {
         echo -e "\e[4;34m This Bomber Was Created By \e[1;32Founder of Dark-Evil MR. Mahfuz Rahman \e[0m"
     else
         echo -e "\e[1;34mCreated By \e[1;34m"
-        toilet -f mono12 -F border Dark-Evil
+        toilet -f mono12 -F border Mahfuz Rahman
     fi
     echo -e "\e[1;34m For Any Queries Join Me!!!\e[0m"
     echo -e "\e[1;32m           facebook https://facebook.com/mahfuz038"
