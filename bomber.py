@@ -51,14 +51,12 @@ def clr():
 def bann_text():
     clr()
     logo = """
-   ████████ █████                 ██
-   ▒▒▒██▒▒▒ ██▒▒██                ██
-      ██    ██  ██        ██   ██ ██
-      ██    █████▒  ████  ███ ███ █████
-      ██    ██▒▒██ ██  ██ ██▒█▒██ ██▒▒██
-      ██    ██  ██ ██  ██ ██ ▒ ██ ██  ██
-      ██    █████▒ ▒████▒ ██   ██ █████▒
-      ▒▒    ▒▒▒▒▒   ▒▒▒▒  ▒▒   ▒▒ ▒▒▒▒▒
+   Mansmash initiated
+   A tool of Dark-Evil
+   Creator Mahfuz Rahman
+   We hack to express not to impress so never mess with us
+   
+                                                              -Mahfuz
                                          """
     version = "Version: "+__VERSION__
     contributors = "Contributors: "+" ".join(__CONTRIBUTORS__)
@@ -73,7 +71,7 @@ def check_intr():
         requests.get("https://motherfuckingwebsite.com")
     except Exception:
         bann_text()
-        mesgdcrt.FailureMessage("Poor internet connection detected")
+        mesgdcrt.FailureMessage("slow internet connection detected")
         sys.exit(2)
 
 
@@ -89,13 +87,13 @@ def do_zip_update():
     # Unzip and overwrite the current folder
 
     if success:
-        mesgdcrt.SuccessMessage("TBomb was updated to the latest version")
+        mesgdcrt.SuccessMessage("Mansmash was updated to the latest version")
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update TBomb.")
+        mesgdcrt.FailureMessage("Unable to update Mansmash.")
         mesgdcrt.WarningMessage(
-            "Grab The Latest one From https://github.com/TheSpeedX/TBomb.git")
+            "Grab The Latest one From https://github.com/Mahfuz038/Mansmash")
 
     sys.exit()
 
@@ -120,11 +118,11 @@ def do_git_update():
     print("\n")
 
     if success:
-        mesgdcrt.SuccessMessage("TBomb was updated to the latest version")
+        mesgdcrt.SuccessMessage("Mansmash was updated to the latest version")
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update TBomb.")
+        mesgdcrt.FailureMessage("Unable to update Mansmash.")
         mesgdcrt.WarningMessage("Make Sure To Install 'git' ")
         mesgdcrt.GeneralMessage("Then run command:")
         print(
@@ -150,8 +148,8 @@ def check_for_updates():
         mesgdcrt.GeneralMessage("Starting update...")
         update()
     else:
-        mesgdcrt.SuccessMessage("TBomb is up-to-date")
-        mesgdcrt.GeneralMessage("Starting TBomb")
+        mesgdcrt.SuccessMessage("Mansmash is up-to-date")
+        mesgdcrt.GeneralMessage("Starting Mansmash")
 
 
 def notifyen():
@@ -342,20 +340,20 @@ except FileNotFoundError:
 
 
 __VERSION__ = get_version()
-__CONTRIBUTORS__ = ['SpeedX', 't0xic0der', 'scpketer', 'Stefan']
+__CONTRIBUTORS__ = ['Dark-Evil', 't0xic0der', 'scpketer', 'Stefan']
 
 ALL_COLORS = [Fore.GREEN, Fore.RED, Fore.YELLOW, Fore.BLUE,
               Fore.MAGENTA, Fore.CYAN, Fore.WHITE]
 RESET_ALL = Style.RESET_ALL
 
-description = """TBomb - Your Friendly Spammer Application
+description = """Mansmash - Your Friendly Spammer Application
 
-TBomb can be used for many purposes which incudes -
+Mansmash can be used for many purposes which incudes -
 \t Exposing the vulnerable APIs over Internet
 \t Friendly Spamming
 \t Testing Your Spam Detector and more ....
 
-TBomb is not intented for malicious uses.
+Mansmash is not intented for malicious uses.
 """
 
 parser = argparse.ArgumentParser(description=description,
